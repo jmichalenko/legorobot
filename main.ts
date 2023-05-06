@@ -1,3 +1,15 @@
+/**
+ * Moves bot forward
+ */
+/**
+ * Moves bot right
+ */
+/**
+ * Moves Bot Left
+ */
+/**
+ * Moves Bot Backwards
+ */
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
         pins.digitalWritePin(DigitalPin.P1, 1)
@@ -9,17 +21,17 @@ radio.onReceivedNumber(function (receivedNumber) {
         pins.digitalWritePin(DigitalPin.P2, 1)
         pins.digitalWritePin(DigitalPin.P8, 0)
         pins.digitalWritePin(DigitalPin.P12, 1)
-    } else if (receivedNumber == 2) {
+    } else if (receivedNumber == 4) {
         pins.digitalWritePin(DigitalPin.P1, 1)
         pins.digitalWritePin(DigitalPin.P2, 0)
-        pins.digitalWritePin(DigitalPin.P8, 0)
-        pins.digitalWritePin(DigitalPin.P12, 1)
-    } else if (receivedNumber == 4) {
+        pins.digitalWritePin(DigitalPin.P8, 1)
+        pins.digitalWritePin(DigitalPin.P12, 0)
+    } else if (receivedNumber == 2) {
         pins.digitalWritePin(DigitalPin.P1, 0)
         pins.digitalWritePin(DigitalPin.P2, 1)
         pins.digitalWritePin(DigitalPin.P8, 1)
         pins.digitalWritePin(DigitalPin.P12, 0)
-    } else if (receivedNumber == 5) {
+    } else if (receivedNumber == 6) {
         pins.digitalWritePin(DigitalPin.P1, 0)
         pins.digitalWritePin(DigitalPin.P2, 0)
         pins.digitalWritePin(DigitalPin.P8, 0)
